@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{    
+    int BUFFSIZE = 101;
+    char cha;
+    char str[101];
+    char sen[101];
+    scanf("%c",&cha);
+    scanf("%s",str);
+    getchar();
+    scanf("%[^\n]s",sen);
+   
+   
+    printf("%c \n",cha);
+    printf("%s \n",str);
+    printf("%s \n",sen);
+    
+    return 0;
+}
