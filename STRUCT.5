@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+int main (){
+	typedef	struct date{
+		int day;
+		int month;
+		int year;
+	}date; 
+	
+	date a,b;
+		a.day = 15;
+		a.month = 12;
+		a.year = 2003;
+		
+		b.day = 12;
+		b.month = 8;
+		b.year = 2004;
+		
+		bool flag = true;
+		if(a.day != b.day) flag = false;
+		if(a.month != b.month) flag = false;
+		if(a.year != b.year) flag = false;
+	
+		if(flag == true) printf("THE NUMBER IS SAME");
+		else printf("THE NUMBER IS DIFFERENT");
+	return 0;
+}
