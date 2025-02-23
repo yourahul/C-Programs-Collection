@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+	typedef struct pokemon{
+		int speed;
+		int attack;
+		char tier;
+		char name[20];
+	}pokemon;
+	
+	pokemon arr[3];
+		
+		arr[0].speed = 20;
+		arr[0].attack = 50;
+		arr[0].tier = 'E';
+		strcpy(arr[0].name,"Pikachu");
+		
+		
+		arr[1].speed = 60;
+		arr[1].attack = 90;
+		arr[1].tier = 'G';
+		strcpy(arr[1].name,"mewoto");
+		
+		arr[2].speed = 150;
+		arr[2].attack = 120;
+		arr[2].tier = 'S';
+		strcpy(arr[2].name,"Charizard");
+		
+		
+		for( int i=0;i<3;i++){
+			printf("NAME  :%s \n",arr[i].name);
+			printf("SPEED :%d \n",arr[i].speed);
+			printf("ATTACK:%d \n ",arr[i].attack);
+			printf("TIER  :%c \n\n",arr[i].tier);
+		}
+	
+	return 0;
+}
