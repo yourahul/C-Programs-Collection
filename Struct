@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+	struct person{
+		char name[20];
+		int salary;
+		int age;
+	};
+	
+	struct person a;
+		strcpy(a.name,"Rahul");
+		a.salary = 2000000;
+		a.age = 27;
+		
+		printf("%s \n",a.name );
+		
+	struct person b;
+		strcpy(b.name,"messi");
+		b.salary = 10000;
+		b.age = 38;
+		
+		printf("%d \n",b.age);
+		
+	return 0;
+}
