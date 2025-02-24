@@ -1,0 +1,58 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main(){
+	typedef struct pokemon{
+		int speed;
+		int attack;
+		int hp;
+		char name[20];
+		char tier;
+	}pokemon;
+	
+	typedef struct legendrypokemon{
+		pokemon normal;
+		char ability[20];
+	}legendrypokemon;
+	
+	
+	typedef struct godpokemon{
+		legendrypokemon legend;
+		char specialability[30];
+	}godpokemon;
+	
+	
+	godpokemon pikachu;
+		strcpy(pikachu.specialability,"CAN BRING FIRE");
+		pikachu.legend.normal.speed = 543;
+		pikachu.legend.normal.attack = 231;
+		pikachu.legend.normal.hp = 423;
+		pikachu.legend.normal.tier = 'S';
+	
+	
+	legendrypokemon mewoto;
+		strcpy(mewoto.ability,"Pressure");
+		mewoto.normal.speed = 120;
+		mewoto.normal.attack = 203;
+		mewoto.normal.hp = 123;
+		mewoto.normal.tier = 'S';
+				    
+    printf("Legendary Pokemon: Mewtwo\n");
+    printf("Ability: %s\n", mewoto.ability);
+    printf("Speed: %d\n", mewoto.normal.speed);
+    printf("Attack: %d\n", mewoto.normal.attack);
+    printf("HP: %d\n", mewoto.normal.hp);
+    printf("Tier: %c\n \n", mewoto.normal.tier);
+    
+    
+    printf("God Pokemon: Pikachu\n");
+    printf("Special Ability: %s\n", pikachu.specialability);
+    printf("Speed: %d\n", pikachu.legend.normal.speed);
+    printf("Attack: %d\n", pikachu.legend.normal.attack);
+    printf("HP: %d\n", pikachu.legend.normal.hp);
+    printf("Tier: %c\n", pikachu.legend.normal.tier);
+
+	
+	return 0;
+}
